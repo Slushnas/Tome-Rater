@@ -65,6 +65,8 @@ class Book():
             print("Invalid Rating")
 
     def get_average_rating(self):
+        if len(self.ratings) == 0:
+            return None
         sum = 0
         for rating in self.ratings:
                 sum += rating
